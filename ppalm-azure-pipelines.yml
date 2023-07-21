@@ -58,6 +58,7 @@ jobs:
       echo "hello world"
       echo "{\"TestURLs\": [$(testurlcontentgeneratorworkshop)]}" >> tests.json
       dir
+      cat tests.json
   
   - template: frameworksteps.yml
     parameters:
