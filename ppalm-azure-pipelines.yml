@@ -69,7 +69,7 @@ jobs:
   - bash: |
       echo "hello world"
   
-  - template: frameworksteps.yml@PowerAppsTestAutomation
+  - template: frameworksteps.yml
     parameters:
       OnlineUsername: $(OnlineUsername)
       OnlinePassword: $(OnlinePassword)
