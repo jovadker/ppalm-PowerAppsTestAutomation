@@ -88,3 +88,4 @@ jobs:
       TestAutomationURLFilePath: $(Build.SourcesDirectory)\$(LocalProjectName)\Samples\$(TestUrlFileName)
       UsePrivateMode: $(PrivateMode)
       LoginMethod: ${{ parameters.LoginMethod }}
+      RepositoryName: $(Build.SourcesDirectory)
