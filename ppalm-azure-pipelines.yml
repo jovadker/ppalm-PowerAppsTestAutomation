@@ -11,7 +11,7 @@ resources:
       name: microsoft/PowerAppsTestAutomation
       ref: master
       # Name of the GitHub OAuth ADO Service Connection
-      endpoint: git
+      endpoint: github.com_jovadker
 
 parameters:
  - name: image
@@ -66,6 +66,9 @@ jobs:
   - checkout: self
   - checkout: PowerAppsTestAutomation
   #- template: localsteps.yml # Provide optional local YAML template here
+  - bash: |
+      echo "hello world"
+  
   - template: frameworksteps.yml@PowerAppsTestAutomation
     parameters:
       OnlineUsername: $(OnlineUsername)
