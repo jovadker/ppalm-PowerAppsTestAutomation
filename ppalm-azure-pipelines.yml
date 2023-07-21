@@ -56,7 +56,7 @@ jobs:
   #- template: localsteps.yml # Provide optional local YAML template here
   - bash: |
       echo "hello world"
-      echo "{\"TestURLs\": [$(testurlcontentgeneratorworkshop)]}" >> tests.json
+      echo "{\"TestURLs\": [\"$(testurlcontentgeneratorworkshop)\""]}" >> tests.json
       dir
       cat tests.json
   
