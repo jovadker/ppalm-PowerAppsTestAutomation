@@ -2,16 +2,16 @@
 # Build Name / Format
 name: PowerAppsTestAutomation-$(date:yyyyMMdd)$(rev:.r)
 
-resources:
-  repositories:
-    - repository: PowerAppsTestAutomation
-      type: github
+#resources:
+  #repositories:
+    #- repository: PowerAppsTestAutomation
+    #  type: github
       # GitHub Repo(e.g. <FORK>/PowerAppsTestAutomation)
       # Recommended to Fork or Duplicate if custom auth flows are required
-      name: microsoft/PowerAppsTestAutomation
-      ref: master
+    #  name: microsoft/PowerAppsTestAutomation
+    #  ref: master
       # Name of the GitHub OAuth ADO Service Connection
-      endpoint: github.com_jovadker
+    #  endpoint: github.com_jovadker
 
 parameters:
  - name: image
