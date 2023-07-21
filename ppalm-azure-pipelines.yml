@@ -68,6 +68,15 @@ jobs:
   #- template: localsteps.yml # Provide optional local YAML template here
   - bash: |
       echo "hello world"
+      echo "{ " + \
+              "TestURLs": + \
+              "[" + \
+                  ""https://apps.powerapps.com/play/{appId}?tenantId={tenantId}&__PATestCaseId={testCaseId}"," + \
+                  ""https://apps.powerapps.com/play/{appId}?tenantId={tenantId}&__PATestCaseId={testCaseId}"", + \
+                  ""https://apps.powerapps.com/play/{appId}?tenantId={tenantId}&__PATestCaseId={testCaseId}"" + \
+              "]" +
+          "}" > tests.json
+      dir
   
   - template: frameworksteps.yml
     parameters:
