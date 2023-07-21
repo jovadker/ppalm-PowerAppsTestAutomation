@@ -64,7 +64,7 @@ jobs:
 
   steps:
   - checkout: self
-  - checkout: PowerAppsTestAutomation
+  #- checkout: PowerAppsTestAutomation
   #- template: localsteps.yml # Provide optional local YAML template here
   - bash: |
       echo "hello world"
