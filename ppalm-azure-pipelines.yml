@@ -59,6 +59,8 @@ jobs:
       echo "{\"TestURLs\": [\"$(testurlcontentgeneratorworkshop)\"]}" >> tests.json
       dir
       cat tests.json
+      echo "IP address of agent:"
+      curl http://ip.me
   
   - template: frameworksteps.yml
     parameters:
