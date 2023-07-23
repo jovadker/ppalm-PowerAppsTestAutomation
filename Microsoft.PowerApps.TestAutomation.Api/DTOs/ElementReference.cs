@@ -17,7 +17,8 @@ namespace Microsoft.PowerApps.TestAutomation.Api
             { "Login_UserId", "//input[@type='email']"},
             { "Login_Password", "//input[@type='password']"},
             { "Login_SignIn", "id(\"cred_sign_in_button\")"},
-            { "Login_MainPage", "//div[contains(@class,\"home-page-component\")]"},
+            //{ "Login_MainPage", "//div[contains(@class,\"home-page-component\")]"},
+            { "Login_MainPage", "//div[starts-with(@class,\"homePageContent\")]"},
             { "Login_StaySignedIn", "id(\"idSIButton9\")"},
 
             //TestAutomation
